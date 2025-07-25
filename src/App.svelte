@@ -6,6 +6,7 @@
 
     import { selectedFonts } from "./lib/state.svelte";
 
+    import Consent from "./lib/components/Consent.svelte";
     import Footer from "./lib/components/Footer.svelte";
     import FontList from "./lib/components/FontList.svelte";
     import FontSearch from "./lib/components/FontSearch.svelte";
@@ -29,6 +30,8 @@
         )[0].style.visibility = "hidden";
     }
 </script>
+
+<Consent />
 
 <main>
     <div class="px-5 container min-h-screen mx-auto">

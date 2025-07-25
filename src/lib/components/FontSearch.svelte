@@ -1,5 +1,6 @@
 <script lang="ts">
     import WebFont from "webfontloader";
+    import { consent } from "../state.svelte";
     import { selectedFonts } from "../state.svelte";
 
     let { fontFamilies } = $props();
@@ -16,7 +17,13 @@
             ) &&
             !selectedFonts.includes(capitalizedInput)
         ) {
-            loadFont(capitalizedInput);
+            const consent =
+                localStorage.getItem("silktideCookieChoice_google-fonts") ===
+                "true";
+            if (consent === true) {
+                loadFont(capitalizedInput);
+            }
+
             selectedFonts.push(capitalizedInput); // Modify the array instead
         }
         fontInput = "";
