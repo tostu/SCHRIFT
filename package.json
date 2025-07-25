@@ -27,5 +27,8 @@
     "@fontsource-variable/bitter": "^5.2.8",
     "@fontsource/lato": "^5.2.6",
     "webfontloader": "^1.6.28"
+  },
+  "engines": {
+    "node": "22"
   }
 }
