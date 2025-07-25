@@ -39,7 +39,7 @@
                         preferences: {
                             title: "Customize your cookie preferences",
                             description:
-                                "<p>We respect your right to privacy. You can choose not to allow anything but the website won't work properly without ImageTrack</p>",
+                                "<p>We respect your right to privacy. You can choose not to allow anything but the website won't work properly without it</p>",
                             creditLinkText: "Get this banner for free",
                             creditLinkAccessibleLabel:
                                 "Get this banner for free",
