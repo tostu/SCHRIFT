@@ -49,7 +49,7 @@
             type="text"
             list="fonts-list"
             autocomplete="off"
-            class="input input-lg bg-white input-bordered w-full"
+            class="input input-lg bg-neutral-50 input-bordered w-full"
             placeholder="Search fonts..."
             bind:value={fontInput}
         />

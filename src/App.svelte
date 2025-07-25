@@ -25,9 +25,11 @@
     });
 
     function hideCursor() {
-        document.getElementsByClassName(
-            "Typewriter__cursor",
-        )[0].style.visibility = "hidden";
+        setTimeout(() => {
+            document.getElementsByClassName(
+                "Typewriter__cursor",
+            )[0].style.visibility = "hidden";
+        }, 1000); // Add a small delay of 500 milliseconds
     }
 </script>
 
@@ -52,7 +54,7 @@
 
             <input
                 type="text"
-                class="input input-lg bg-white input-bordered w-full"
+                class="input input-lg bg-neutral-50 input-bordered w-full"
                 placeholder="Change example text..."
                 bind:value={exampleText}
             />
