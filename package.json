@@ -1,0 +1,31 @@
+{
+  "name": "schrift",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run downloadFonts && vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "downloadFonts": "node ./downloadFonts.js"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/webfontloader": "^1.6.38",
+    "svelte": "^5.35.5",
+    "svelte-check": "^4.2.2",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "typewriter-effect": "^2.22.0",
+    "daisyui": "^5.0.46"
+  },
+  "dependencies": {
+    "@fontsource-variable/bitter": "^5.2.8",
+    "@fontsource/lato": "^5.2.6",
+    "webfontloader": "^1.6.28"
+  }
+}
