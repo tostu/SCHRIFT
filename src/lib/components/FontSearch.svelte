@@ -1,6 +1,5 @@
 <script lang="ts">
     import WebFont from "webfontloader";
-    import { consent } from "../state.svelte";
     import { selectedFonts } from "../state.svelte";
 
     let { fontFamilies } = $props();
