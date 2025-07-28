@@ -46,7 +46,7 @@
                 class="text-7xl md:text-9xl font-bitter leading-24"
             ></h1>
             <p class="text-xl text-gray-700 text-center">
-                Explore and apply custom Google fonts to your text.
+                Explore and apply custom fonts to your text.
             </p>
         </div>
 
