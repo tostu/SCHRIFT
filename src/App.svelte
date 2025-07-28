@@ -10,6 +10,7 @@
     import Footer from "./lib/components/Footer.svelte";
     import FontList from "./lib/components/FontList.svelte";
     import FontSearch from "./lib/components/FontSearch.svelte";
+    import FontUpload from "./lib/components/FontUpload.svelte";
 
     let fontFamilies: string[] = [];
     let exampleText = "The quick brown fox jumps over the lazy dog.";
@@ -49,8 +50,12 @@
             </p>
         </div>
 
-        <div class="flex flex-col md:flex-row items-center gap-7 w-full">
-            <FontSearch {fontFamilies} {selectedFonts} />
+        <div class="flex flex-col items-center gap-7 w-full">
+            <div class="flex w-full flex-col lg:flex-row">
+                <FontSearch {fontFamilies} {selectedFonts} />
+                <div class="divider lg:divider-horizontal">OR</div>
+                <FontUpload />
+            </div>
 
             <input
                 type="text"

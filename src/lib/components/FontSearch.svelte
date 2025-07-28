@@ -43,7 +43,7 @@
     }
 </script>
 
-<form class="w-full lg:w-1/2" on:submit|preventDefault={addFontToSelected}>
+<form class="w-full" on:submit|preventDefault={addFontToSelected}>
     <div class="flex gap-2 items-center">
         <input
             type="text"
